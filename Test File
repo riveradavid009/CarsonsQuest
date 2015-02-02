@@ -1,3 +1,15 @@
-Test File
-	This is a Text Document
-	This is an Edit
+App #0
+
+Application for the iPhone simulator, and all it’s going to do is have tow screens
+	
+	screen 1) list view, i want it to show a list of countries tapping on a row show 		bring you to screen 2
+	screen 2) a detail view of the country, tell me population, size, and a couple of 		other features you can find also the flag 
+
+	hardcoded
+App #1
+
+Same as App #1 using sqlite DB
+
+App #2
+
+Use wikipedia for information
