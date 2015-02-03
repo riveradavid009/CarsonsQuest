@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Country.h"
 
 @interface ViewController ()
 
@@ -14,14 +15,30 @@
 
 @implementation ViewController
 
+@synthesize countries = _countries;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    self.title = @"Countries";
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return _countries.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyBasicCell"];
+    Country *newCountry = [self.countries objectAtIndex:indexPath.row];
+    cell.textLabel.text = newCountry.name;
+    return cell;
 }
 
 @end

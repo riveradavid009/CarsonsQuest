@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "Country.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    //Adding Hard Coded countries
+    
+    Country *usa = [[Country alloc] initWithName:@"USA"];
+    Country *mexico = [[Country alloc] initWithName:@"Mexico"];
+    Country *canada = [[Country alloc] initWithName:@"Canada"];
+    
+    NSMutableArray *countries = [NSMutableArray arrayWithObjects:usa, mexico, canada, nil];
+    
+    UINavigationController *navController = (UINavigationController *) self.window.rootViewController;
+    ViewController *masterController = [navController.viewControllers objectAtIndex:0];
+    masterController.countries = countries;
     return YES;
 }
 
