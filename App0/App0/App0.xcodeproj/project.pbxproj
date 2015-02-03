@@ -15,6 +15,10 @@
 		CD11ABC61A80229F000CFFE7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD11ABC41A80229F000CFFE7 /* LaunchScreen.xib */; };
 		CD11ABD21A80229F000CFFE7 /* App0Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD11ABD11A80229F000CFFE7 /* App0Tests.m */; };
 		CD4EF6961A8031D000A50E04 /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = CD4EF6951A8031D000A50E04 /* Country.m */; };
+		CDD24E051A817C0700935DB4 /* canadaFlag.png in Resources */ = {isa = PBXBuildFile; fileRef = CDD24E001A817C0700935DB4 /* canadaFlag.png */; };
+		CDD24E061A817C0700935DB4 /* mexicoFlag.png in Resources */ = {isa = PBXBuildFile; fileRef = CDD24E011A817C0700935DB4 /* mexicoFlag.png */; };
+		CDD24E071A817C0700935DB4 /* usaFlag.png in Resources */ = {isa = PBXBuildFile; fileRef = CDD24E021A817C0700935DB4 /* usaFlag.png */; };
+		CDD24E081A817C0700935DB4 /* CountryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD24E041A817C0700935DB4 /* CountryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +47,11 @@
 		CD11ABD11A80229F000CFFE7 /* App0Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = App0Tests.m; sourceTree = "<group>"; };
 		CD4EF6941A802F7F00A50E04 /* Country.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Country.h; sourceTree = "<group>"; };
 		CD4EF6951A8031D000A50E04 /* Country.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Country.m; sourceTree = "<group>"; };
+		CDD24E001A817C0700935DB4 /* canadaFlag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = canadaFlag.png; sourceTree = "<group>"; };
+		CDD24E011A817C0700935DB4 /* mexicoFlag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mexicoFlag.png; sourceTree = "<group>"; };
+		CDD24E021A817C0700935DB4 /* usaFlag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usaFlag.png; sourceTree = "<group>"; };
+		CDD24E031A817C0700935DB4 /* CountryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountryViewController.h; sourceTree = "<group>"; };
+		CDD24E041A817C0700935DB4 /* CountryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +93,11 @@
 		CD11ABB41A80229F000CFFE7 /* App0 */ = {
 			isa = PBXGroup;
 			children = (
+				CDD24E001A817C0700935DB4 /* canadaFlag.png */,
+				CDD24E011A817C0700935DB4 /* mexicoFlag.png */,
+				CDD24E021A817C0700935DB4 /* usaFlag.png */,
+				CDD24E031A817C0700935DB4 /* CountryViewController.h */,
+				CDD24E041A817C0700935DB4 /* CountryViewController.m */,
 				CD11ABB91A80229F000CFFE7 /* AppDelegate.h */,
 				CD11ABBA1A80229F000CFFE7 /* AppDelegate.m */,
 				CD11ABBC1A80229F000CFFE7 /* ViewController.h */,
@@ -207,6 +221,9 @@
 				CD11ABC11A80229F000CFFE7 /* Main.storyboard in Resources */,
 				CD11ABC61A80229F000CFFE7 /* LaunchScreen.xib in Resources */,
 				CD11ABC31A80229F000CFFE7 /* Images.xcassets in Resources */,
+				CDD24E071A817C0700935DB4 /* usaFlag.png in Resources */,
+				CDD24E051A817C0700935DB4 /* canadaFlag.png in Resources */,
+				CDD24E061A817C0700935DB4 /* mexicoFlag.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +242,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CD4EF6961A8031D000A50E04 /* Country.m in Sources */,
+				CDD24E081A817C0700935DB4 /* CountryViewController.m in Sources */,
 				CD11ABBE1A80229F000CFFE7 /* ViewController.m in Sources */,
 				CD11ABBB1A80229F000CFFE7 /* AppDelegate.m in Sources */,
 				CD11ABB81A80229F000CFFE7 /* main.m in Sources */,
