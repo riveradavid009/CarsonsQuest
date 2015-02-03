@@ -17,7 +17,8 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
     //Adding Hard Coded countries
     
     Country *usa = [[Country alloc] initWithName:@"USA"];
@@ -26,9 +27,10 @@
     
     NSMutableArray *countries = [NSMutableArray arrayWithObjects:usa, mexico, canada, nil];
     
-    UINavigationController *navController = (UINavigationController *) self.window.rootViewController;
-    ViewController *masterController = [navController.viewControllers objectAtIndex:0];
+    UIViewController *viewController = (UIViewController *) self.window.rootViewController;
+    ViewController *masterController = [viewController.viewControllers objectAtIndex:0];
     masterController.countries = countries;
+    
     return YES;
 }
 
