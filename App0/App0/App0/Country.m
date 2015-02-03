@@ -10,6 +10,7 @@
 
 @implementation Country
 
+//@synthesize flag = _flag;
 @synthesize name = _name;
 @synthesize capital = _capital;
 @synthesize size = _size;
@@ -25,6 +26,34 @@
     return self;
 }
 
+//Load country's information
+-(BOOL)loadCountryInfo
+{
+    //Hard coded instance
+    if([self.name  isEqual: @"USA"])
+    {
+        [self setCapital:@"Washington D.C"];
+        [self setFlag:[UIImage imageNamed:@"usaFlag.png"]];
+        [self setPopulation:@"320206000"];
+        [self setSize:@"3805927"];
+    }
+    else if([self.name  isEqual: @"Canada"])
+    {
+        [self setCapital:@"Ottawa"];
+        [self setFlag:[UIImage imageNamed:@"canadaFlag.png"]];
+        [self setPopulation:@"35675834"];
+        [self setSize:@"3854085"];
+    }
+    if([self.name  isEqual: @"Mexico"])
+    {
+        [self setCapital:@"Mexico City"];
+        [self setFlag:[UIImage imageNamed:@"mexicoFlag.png"]];
+        [self setPopulation:@"118395054"];
+        [self setSize:@"761606"];
+    }
+    return true;
+}
+
 //Getters
 - (NSString *)getName
 {
@@ -34,17 +63,22 @@
 {
     return _capital;
 }
-- (int)getPopulation
+- (NSString *)getPopulation
 {
     return _population;
 }
-- (int)getSize
+- (NSString *)getSize
 {
     return _size;
 }
 
 
 //Setters
+
+- (void)setFlag:(UIImage *)image
+{
+    _flag = image;
+}
 - (void)setName:(NSString *)newName
 {
     _name = newName;
@@ -53,11 +87,11 @@
 {
     _capital = newCapital;
 }
-- (void)setPopulation:(int)newPopulation
+- (void)setPopulation:(NSString *)newPopulation
 {
     _population = newPopulation;
 }
-- (void)setSize:(int)newSize
+- (void)setSize:(NSString *)newSize
 {
     _size = newSize;
 }

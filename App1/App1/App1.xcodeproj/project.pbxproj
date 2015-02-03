@@ -16,6 +16,9 @@
 		CD24A2A61A81354300FC2C7E /* App1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD24A2A51A81354300FC2C7E /* App1Tests.m */; };
 		CD24A2B11A813B1E00FC2C7E /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = CD24A2B01A813B1E00FC2C7E /* Country.m */; };
 		CD24A2BA1A81593E00FC2C7E /* CountryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD24A2B91A81593E00FC2C7E /* CountryViewController.m */; };
+		CD24A2C11A81718D00FC2C7E /* mexicoFlag.png in Resources */ = {isa = PBXBuildFile; fileRef = CD24A2BE1A81718D00FC2C7E /* mexicoFlag.png */; };
+		CD24A2C21A81718D00FC2C7E /* usaFlag.png in Resources */ = {isa = PBXBuildFile; fileRef = CD24A2BF1A81718D00FC2C7E /* usaFlag.png */; };
+		CD24A2C31A81718D00FC2C7E /* canadaFlag.png in Resources */ = {isa = PBXBuildFile; fileRef = CD24A2C01A81718D00FC2C7E /* canadaFlag.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,9 @@
 		CD24A2B21A813B6D00FC2C7E /* Country.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Country.h; sourceTree = "<group>"; };
 		CD24A2B91A81593E00FC2C7E /* CountryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryViewController.m; sourceTree = "<group>"; };
 		CD24A2BB1A81597C00FC2C7E /* CountryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountryViewController.h; sourceTree = "<group>"; };
+		CD24A2BE1A81718D00FC2C7E /* mexicoFlag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mexicoFlag.png; sourceTree = "<group>"; };
+		CD24A2BF1A81718D00FC2C7E /* usaFlag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = usaFlag.png; sourceTree = "<group>"; };
+		CD24A2C01A81718D00FC2C7E /* canadaFlag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = canadaFlag.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,9 @@
 		CD24A2881A81354200FC2C7E /* App1 */ = {
 			isa = PBXGroup;
 			children = (
+				CD24A2BE1A81718D00FC2C7E /* mexicoFlag.png */,
+				CD24A2BF1A81718D00FC2C7E /* usaFlag.png */,
+				CD24A2C01A81718D00FC2C7E /* canadaFlag.png */,
 				CD24A28D1A81354200FC2C7E /* AppDelegate.h */,
 				CD24A28E1A81354200FC2C7E /* AppDelegate.m */,
 				CD24A2901A81354200FC2C7E /* ViewController.h */,
@@ -209,9 +218,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD24A2C11A81718D00FC2C7E /* mexicoFlag.png in Resources */,
 				CD24A2951A81354200FC2C7E /* Main.storyboard in Resources */,
 				CD24A29A1A81354200FC2C7E /* LaunchScreen.xib in Resources */,
+				CD24A2C31A81718D00FC2C7E /* canadaFlag.png in Resources */,
 				CD24A2971A81354200FC2C7E /* Images.xcassets in Resources */,
+				CD24A2C21A81718D00FC2C7E /* usaFlag.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

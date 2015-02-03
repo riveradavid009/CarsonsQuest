@@ -66,6 +66,7 @@
     
     CountryViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"CountryViewController"];
     
+    [detailViewController setImage:newCountry.flag];
     [detailViewController setLableName:newCountry.getName];
     [detailViewController setLableCapital:newCountry.getCapital];
     [detailViewController setLableSize:newCountry.getSize];

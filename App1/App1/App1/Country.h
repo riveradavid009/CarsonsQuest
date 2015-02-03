@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface Country : NSObject
 
-//@property UI *flag;
+@property UIImage *flag;
 @property NSString *name;
 @property NSString *capital;
 @property NSString *population;
@@ -29,7 +30,7 @@
 - (NSString *)getSize;
 
 //Setters
-//- (void)setFlag:(UIImage *)image;
+- (void)setFlag:(UIImage *)image;
 - (void)setName:(NSString *)newName;
 - (void)setCapital:(NSString *)newCapital;
 - (void)setPopulation:(NSString *)newPopulation;

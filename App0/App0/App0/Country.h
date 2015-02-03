@@ -7,28 +7,33 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface Country : NSObject
 
+@property UIImage *flag;
 @property NSString *name;
 @property NSString *capital;
-@property int population;
-@property int size;
+@property NSString *population;
+@property NSString *size;
 
 //Constructors
 - (id)initWithName:(NSString *)newName;
-//- (id)initWithAllAttributes:(NSString *) newName, (NSString *) newCapital, (int) newPop, (int) newSize;
+
+//Load country's information
+-(BOOL)loadCountryInfo;
 
 //Getters
 - (NSString *)getName;
 - (NSString *)getCapital;
-- (int)getPopulation;
-- (int)getSize;
+- (NSString *)getPopulation;
+- (NSString *)getSize;
 
 //Setters
+- (void)setFlag:(UIImage *)image;
 - (void)setName:(NSString *)newName;
 - (void)setCapital:(NSString *)newCapital;
-- (void)setPopulation:(int)newPopulation;
--( void)setSize:(int)newSize;
+- (void)setPopulation:(NSString *)newPopulation;
+- (void)setSize:(NSString *)newSize;
 
 @end
