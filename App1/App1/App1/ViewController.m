@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Country.h"
+#import "CountryViewController.h"
 
 @interface ViewController ()
 {
@@ -18,7 +19,8 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
@@ -29,7 +31,8 @@
     Country *mexico = [[Country alloc] initWithName:@"Mexico"];
     Country *canada = [[Country alloc] initWithName:@"Canada"];
     
-    countries = [NSMutableArray arrayWithObjects:usa, mexico, canada, nil];}
+    countries = [NSMutableArray arrayWithObjects:usa, mexico, canada, nil];
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -59,12 +62,23 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     Country *newCountry = [countries objectAtIndex:indexPath.row];
+    [newCountry loadCountryInfo];
+    
+    CountryViewController *detailViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"CountryViewController"];
+    
+    [detailViewController setLableName:newCountry.getName];
+    [detailViewController setLableCapital:newCountry.getCapital];
+    [detailViewController setLableSize:newCountry.getSize];
+    [detailViewController setLablePopulation:newCountry.getPopulation];
+
+    [self.navigationController pushViewController:(detailViewController) animated:(YES)];
+   /*
     UIAlertView *messageAlert = [[UIAlertView alloc]
-                                 initWithTitle:newCountry.name message:@"You've selected a row" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                                 initWithTitle:newCountry.name message:newCountry.capital delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     
     // Display Alert Message
     [messageAlert show];
-    
+    */
 }
 
 @end

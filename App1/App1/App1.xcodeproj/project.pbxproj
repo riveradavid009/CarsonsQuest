@@ -15,6 +15,7 @@
 		CD24A29A1A81354200FC2C7E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CD24A2981A81354200FC2C7E /* LaunchScreen.xib */; };
 		CD24A2A61A81354300FC2C7E /* App1Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CD24A2A51A81354300FC2C7E /* App1Tests.m */; };
 		CD24A2B11A813B1E00FC2C7E /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = CD24A2B01A813B1E00FC2C7E /* Country.m */; };
+		CD24A2BA1A81593E00FC2C7E /* CountryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD24A2B91A81593E00FC2C7E /* CountryViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		CD24A2A51A81354300FC2C7E /* App1Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = App1Tests.m; sourceTree = "<group>"; };
 		CD24A2B01A813B1E00FC2C7E /* Country.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Country.m; sourceTree = "<group>"; };
 		CD24A2B21A813B6D00FC2C7E /* Country.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Country.h; sourceTree = "<group>"; };
+		CD24A2B91A81593E00FC2C7E /* CountryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountryViewController.m; sourceTree = "<group>"; };
+		CD24A2BB1A81597C00FC2C7E /* CountryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountryViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +97,8 @@
 				CD24A2891A81354200FC2C7E /* Supporting Files */,
 				CD24A2B01A813B1E00FC2C7E /* Country.m */,
 				CD24A2B21A813B6D00FC2C7E /* Country.h */,
+				CD24A2B91A81593E00FC2C7E /* CountryViewController.m */,
+				CD24A2BB1A81597C00FC2C7E /* CountryViewController.h */,
 			);
 			path = App1;
 			sourceTree = "<group>";
@@ -228,6 +233,7 @@
 				CD24A2921A81354200FC2C7E /* ViewController.m in Sources */,
 				CD24A28F1A81354200FC2C7E /* AppDelegate.m in Sources */,
 				CD24A28C1A81354200FC2C7E /* main.m in Sources */,
+				CD24A2BA1A81593E00FC2C7E /* CountryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +426,7 @@
 				CD24A2AB1A81354300FC2C7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CD24A2AC1A81354300FC2C7E /* Build configuration list for PBXNativeTarget "App1Tests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +435,7 @@
 				CD24A2AE1A81354300FC2C7E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
