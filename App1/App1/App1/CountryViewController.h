@@ -27,6 +27,7 @@
 -(void)setLableCapital:(NSString *)test;
 -(void)setLableSize:(NSString *)test;
 -(void)setLablePopulation:(NSString *)test;
++(UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize;
 
 
-@end
+@end;

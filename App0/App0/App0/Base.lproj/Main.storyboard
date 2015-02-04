@@ -87,11 +87,16 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XbS-00-EGL">
-                                <rect key="frame" x="50" y="28" width="525" height="250"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XbS-00-EGL">
+                                <rect key="frame" x="50" y="20" width="500" height="250"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="XbS-00-EGL" firstAttribute="top" secondItem="qTl-5h-ssv" secondAttribute="top" constant="20" id="6xV-yN-B8J"/>
+                            <constraint firstAttribute="trailing" secondItem="XbS-00-EGL" secondAttribute="trailing" constant="50" id="oF6-Oy-XKa"/>
+                            <constraint firstItem="XbS-00-EGL" firstAttribute="leading" secondItem="qTl-5h-ssv" secondAttribute="leading" constant="50" id="vho-Iz-25a"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="flagImage" destination="XbS-00-EGL" id="RJW-5q-tbH"/>
