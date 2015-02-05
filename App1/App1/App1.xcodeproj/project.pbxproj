@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CD1480851A82C0D600E9A999 /* CountriesDB.m in Sources */ = {isa = PBXBuildFile; fileRef = CD1480841A82C0D600E9A999 /* CountriesDB.m */; };
+		CD14808C1A82CAA900E9A999 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CD14808B1A82CAA900E9A999 /* libsqlite3.dylib */; };
+		CD14808E1A82DC5600E9A999 /* countries.sqlite3 in Resources */ = {isa = PBXBuildFile; fileRef = CD14808D1A82DC5600E9A999 /* countries.sqlite3 */; };
 		CD24A28C1A81354200FC2C7E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD24A28B1A81354200FC2C7E /* main.m */; };
 		CD24A28F1A81354200FC2C7E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CD24A28E1A81354200FC2C7E /* AppDelegate.m */; };
 		CD24A2921A81354200FC2C7E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CD24A2911A81354200FC2C7E /* ViewController.m */; };
@@ -29,6 +32,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CD1480841A82C0D600E9A999 /* CountriesDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountriesDB.m; sourceTree = "<group>"; };
+		CD1480881A82C17000E9A999 /* CountriesDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CountriesDB.h; sourceTree = "<group>"; };
+		CD14808B1A82CAA900E9A999 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		CD14808D1A82DC5600E9A999 /* countries.sqlite3 */ = {isa = PBXFileReference; lastKnownFileType = file; path = countries.sqlite3; sourceTree = "<group>"; };
 		CD24A2861A81354200FC2C7E /* App1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD24A28A1A81354200FC2C7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD24A28B1A81354200FC2C7E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -53,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD14808C1A82CAA900E9A999 /* libsqlite3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +77,7 @@
 		CD24A27D1A81354200FC2C7E = {
 			isa = PBXGroup;
 			children = (
+				CD14808B1A82CAA900E9A999 /* libsqlite3.dylib */,
 				CD24A2881A81354200FC2C7E /* App1 */,
 				CD24A2A21A81354300FC2C7E /* App1Tests */,
 				CD24A2871A81354200FC2C7E /* Products */,
@@ -87,10 +96,13 @@
 		CD24A2881A81354200FC2C7E /* App1 */ = {
 			isa = PBXGroup;
 			children = (
+				CD14808D1A82DC5600E9A999 /* countries.sqlite3 */,
 				CD24A28D1A81354200FC2C7E /* AppDelegate.h */,
 				CD24A28E1A81354200FC2C7E /* AppDelegate.m */,
 				CD24A2901A81354200FC2C7E /* ViewController.h */,
 				CD24A2911A81354200FC2C7E /* ViewController.m */,
+				CD1480881A82C17000E9A999 /* CountriesDB.h */,
+				CD1480841A82C0D600E9A999 /* CountriesDB.m */,
 				CD24A2931A81354200FC2C7E /* Main.storyboard */,
 				CD24A2961A81354200FC2C7E /* Images.xcassets */,
 				CD24A2981A81354200FC2C7E /* LaunchScreen.xib */,
@@ -209,6 +221,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CD14808E1A82DC5600E9A999 /* countries.sqlite3 in Resources */,
 				CD24A2951A81354200FC2C7E /* Main.storyboard in Resources */,
 				CD24A29A1A81354200FC2C7E /* LaunchScreen.xib in Resources */,
 				CD24A2971A81354200FC2C7E /* Images.xcassets in Resources */,
@@ -233,6 +246,7 @@
 				CD24A2921A81354200FC2C7E /* ViewController.m in Sources */,
 				CD24A28F1A81354200FC2C7E /* AppDelegate.m in Sources */,
 				CD24A28C1A81354200FC2C7E /* main.m in Sources */,
+				CD1480851A82C0D600E9A999 /* CountriesDB.m in Sources */,
 				CD24A2BA1A81593E00FC2C7E /* CountryViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

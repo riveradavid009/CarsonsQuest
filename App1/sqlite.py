@@ -24,7 +24,7 @@ def readImage(image):
 
 try:
     #Connect to Database
-	conn = lite.connect('countries.db')
+	conn = lite.connect('countries.sqlite3')
 	print "Countries DB connected"
 
 	#Create a Cursor to access the Database

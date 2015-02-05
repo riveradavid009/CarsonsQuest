@@ -21,7 +21,7 @@
 - (id)initWithName:(NSString *)newName;
 
 //Load country's information
--(BOOL)loadCountryInfo;
+-(void)loadCountryInfo;
 
 //Getters
 - (NSString *)getName;

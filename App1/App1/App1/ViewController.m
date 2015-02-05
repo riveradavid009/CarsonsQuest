@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "Country.h"
 #import "CountryViewController.h"
+#import "CountriesDB.h"
 
 @interface ViewController ()
 {
@@ -22,16 +23,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
     
     self.title = @"Countries";
-    // Initialize table data
     
-    Country *usa = [[Country alloc] initWithName:@"USA"];
-    Country *mexico = [[Country alloc] initWithName:@"Mexico"];
-    Country *canada = [[Country alloc] initWithName:@"Canada"];
-    
-    countries = [NSMutableArray arrayWithObjects:usa, mexico, canada, nil];
+    countries = [CountriesDB getCountries];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -73,13 +68,7 @@
     [detailViewController setLablePopulation:newCountry.getPopulation];
 
     [self.navigationController pushViewController:(detailViewController) animated:(YES)];
-   /*
-    UIAlertView *messageAlert = [[UIAlertView alloc]
-                                 initWithTitle:newCountry.name message:newCountry.capital delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    
-    // Display Alert Message
-    [messageAlert show];
-    */
+
 }
 
 @end
