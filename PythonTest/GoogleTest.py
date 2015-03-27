@@ -17,10 +17,10 @@ flags = tools.argparser.parse_args(args=[])
 # applications
 # The client_id and client_secret can be found in Google Developers Console
 FLOW = OAuth2WebServerFlow(
-    client_id='530561913153-9f18cg1d3s7dllna1vtidgkca3sh755a.apps.googleusercontent.com',
-    client_secret='0rr4VgW2uGb1gMyzx6TGRmhU',
+    client_id='188821364515-nrl25j934h8m2at8hh6q0p4dh067fjck.apps.googleusercontent.com',
+    client_secret='AiBAY4U6IUs_ezQyVw7i790t',
     scope='https://www.googleapis.com/auth/calendar',
-    user_agent='CalDavTest/0.1')
+    user_agent='LDCLOUD Webhooks/1.0')
 
 # To disable the local server feature, uncomment the following line:
 #flags.auth_local_webserver = False
@@ -32,7 +32,7 @@ storage = Storage('calendar.dat')
 credentials = storage.get()
 #credentials = tools.run_flow(FLOW, storage, flags)
 if credentials is None or credentials.invalid == True:
-  credentials = run(FLOW, storage)
+  credentials = tools.run_flow(FLOW, storage, flags)
 
 # Create an httplib2.Http object to handle our HTTP requests and authorize it
 # with our good Credentials.
@@ -64,9 +64,8 @@ event = {
   ],
 }
 
-attendees_event = service.events().insert(calendarId='primary',sendNotifications=True, body=event).execute()
-
-print attendees_event['id']
+events = service.events().list(calendarId='invites-noreply@liquidanalytics.com').execute()
+print events
 
 
 
